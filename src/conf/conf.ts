@@ -5,6 +5,7 @@ export const conf={
     appwrite_database_id:String(process.env.APPWRITE_DATABASE_ID),
     appwrite_storage_id:String(process.env.APPWRITE_STROAGE),
     workspace_key:String(process.env.WORKSPACE_KEY),
+    members_collection:String(process.env.MEMBERS_COLLECTION)
 }
 
 
