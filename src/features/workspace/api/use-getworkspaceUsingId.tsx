@@ -16,8 +16,7 @@ export const useGetWorkspace = (workspaceId: string) => {
         throw new Error("Failed to fetch workspace details");
       }
 
-      const data = await res.json();
-      return data as ResponseType;
+      return await res.json();
     },
     enabled: !!workspaceId,
   });

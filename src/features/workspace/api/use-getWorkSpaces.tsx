@@ -6,7 +6,7 @@ type Response=InferResponseType<typeof client.api.workspace["$get"]>
 
 export const useGetWorkSpaces=()=>{
     const query=useQuery<Response,Error>({
-        queryKey:["workspace"],
+        queryKey:["workspaces"],
         queryFn:async()=>{
             const res=await client.api.workspace["$get"]()
             return await res.json()
